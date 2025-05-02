@@ -7,6 +7,7 @@ def main():
         n = int(file.readline())
         a = list(map(int, file.readline().split()))
         b = list(map(int, file.readline().split()))
+    file.close()
 
     a.sort()
     b.sort()

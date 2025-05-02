@@ -9,6 +9,7 @@ def main():
         for _ in range(n):
             s, f = map(int, file.readline().split())
             lectures.append((s, f))
+    file.close()
 
     lectures.sort(key=lambda x: x[1])
 

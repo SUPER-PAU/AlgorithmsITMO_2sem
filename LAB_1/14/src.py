@@ -49,8 +49,9 @@ def get_maximum_value(strg):
 
 @test_performance
 def main():
-    with open('test1.txt', 'r', encoding='utf-8') as f:
-        strg = f.readline().strip()
+    with open('test1.txt', 'r', encoding='utf-8') as file:
+        strg = file.readline().strip()
+    file.close()
 
     print(get_maximum_value(strg))
 

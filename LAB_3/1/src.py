@@ -16,6 +16,8 @@ def main():
 
         for _ in range(m):
             a, b = map(int, file.readline().split())
+            if not (1 <= a <= n and 1 <= b <= n):
+                return print(f"Invalid edge: {a} -> {b}")
             graph[a].append(b)
             graph[b].append(a)
         u, v = map(int, file.readline().split())

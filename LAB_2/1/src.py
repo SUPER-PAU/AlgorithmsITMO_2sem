@@ -43,7 +43,7 @@ def post_order(tree):
 @test_performance
 def main():
     tree = []
-    with open('test2.txt', 'r', encoding='utf-8') as file:
+    with open('deep_tree.txt', 'r', encoding='utf-8') as file:
         n = int(file.readline().strip())
         for _ in range(n):
             key, left, right = map(int, file.readline().split())

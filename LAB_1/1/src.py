@@ -3,7 +3,7 @@ from tests import test_performance
 
 @test_performance
 def main():
-    with open('test1.txt', 'r', encoding='utf-8') as file:
+    with open('test2.txt', 'r', encoding='utf-8') as file:
         n, total_weight = map(int, file.readline().split())
         items = [tuple(map(int, file.readline().split())) for _ in range(n)]
     file.close()

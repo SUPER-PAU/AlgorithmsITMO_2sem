@@ -9,7 +9,7 @@ def prefix_function(s):
         if s[i] == s[k]:
             k += 1
         pi.append(k)
-    print(pi)
+    # print(pi)
     return pi
 
 def kmp(p, t):
@@ -19,7 +19,7 @@ def kmp(p, t):
     len_p = len(p)
     len_s = len(s)
     for i in range(len_p + 1, len_s):
-        print(s[i])
+        # print(s[i])
         if pi[i] == len_p:
             result.append(i - (len_p + 2))
     return result
@@ -27,13 +27,13 @@ def kmp(p, t):
 
 @test_performance
 def main():
-    with open("test1.txt", 'r') as file:
+    with open("test2.txt", 'r') as file:
         p = file.readline().strip()
         t = file.readline().strip()
 
     res = kmp(p, t)
     print(len(res))
-    print(res)
+    print(*res)
 
 if __name__ == "__main__":
     main()

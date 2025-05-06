@@ -14,7 +14,7 @@ def prefix_function(s):
 
 @test_performance
 def main():
-    with open("test2.txt", "r") as file:
+    with open("test1.txt", "r") as file:
         s = file.readline().strip()
     pi = prefix_function(s)
     print(*pi)

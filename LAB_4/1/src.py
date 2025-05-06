@@ -17,10 +17,11 @@ def kmp(p, t):
     pi = prefix_function(s)
     result = []
     len_p = len(p)
-    len_t = len(t)
-    for i in range(1, len_t):
-        if pi[len_p + i + 1] == len_p:
-            result.append(i - len_p + 2)
+    len_s = len(s)
+    for i in range(len_p + 1, len_s):
+        print(s[i])
+        if pi[i] == len_p:
+            result.append(i - (len_p + 2))
     return result
 
 

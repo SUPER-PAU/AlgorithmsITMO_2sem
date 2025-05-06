@@ -35,3 +35,12 @@
 - [Объяснение задач](LAB_3/README.md)
 
 ---
+
+### LAB 4:
+
+- [1: "kmp"](LAB_4/1/src.py)
+- [4: "hash"](LAB_4/4/src.py)
+- [5: "prefix-functions"](LAB_4/5/src.py)
+- [Объяснение задач](LAB_4/README.md)
+
+---
